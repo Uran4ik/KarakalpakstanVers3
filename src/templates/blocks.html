@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<pre>   </pre>
+<pre>   </pre>
+<h1 class="mb-5"><strong>Какое блюдо вы хотите купить?</strong></h1>
+
+  <div class="row">
+  {% for cus in app_cuisine %}
+    <div class="col-md-3">
+      <div class="card mb-3">
+          <div class="card-header fw-bold">{{ cus.name }}</div>
+          <div class="card-body">
+              <p class="badge bg-primary text-wrap">{{ cus.name }}</p>
+              <p class="card-text"><strong>Краткое описание:</strong> {{ cus.short_description }}</p>
+              <p class="card-text"><strong>Цена:</strong> {{ cus.price }} сум</p>
+          </div>
+      </div>
+    </div>
+  {% endfor %}
+      <div class="rightMoreDetails">
+          <a class="moreDetails" href="/NationalCuisine"><strong>Подробнее</strong></a>
+      </div>
+<pre>   </pre>
+<pre>   </pre>
+<h1 class="mb-5"><strong>Куда хотите отправиться?</strong></h1>
+      {% for atr in app_attract %}
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-header fw-bold">{{ atr.name }}</div>
+                <div class="card-body">
+                    <p class="badge bg-primary text-wrap">{{ atr.name }}</p>
+                    <p class="card-text"><strong>Краткое описание:</strong> {{ atr.short_description }}</p>
+                    <p class="card-text"><strong>Цена:</strong> {{ atr.price }} сум</p>
+                </div>
+                </div>
+            </div>
+      {% endfor %}
+      <div class="rightMoreDetails">
+            <a class="moreDetails" href="/attractions"><strong>Подробнее</strong></a>
+      </div>
+      <pre>             </pre>
+      <pre>             </pre>
+  </div>
+{% endblock %}

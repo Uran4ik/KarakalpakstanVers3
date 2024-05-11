@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+            <h1 class="text-center">Привет, {{ user.username }}</h1>
+      </div>
+            <h3 class="text-center"><span>Ваши данные:</span></h3>
+            <h4 class="text-center"><span>Username:</span> {{ user.username }}</h4>
+            <h4 class="text-center"><span>Имя:</span> {{ user.firstname }}</h4>
+            <h4 class="text-center"><span>Фамилия:</span> {{ user.lastname }}</h4>
+            <div class="text-center">
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Выход</a>
+                <a href="{{ url_for('edit') }}" class="btn btn-secondary">Изменить</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="static/Auth.css">
+    <title>AdminPage</title>
+</head>
+<body>
+    <h1>Привет Админ!</h1>
+    <input type="button" value="Вернуться" onclick="Back()">
+    <div class="navigation">
+        <a href="Home.html">Главная</a>
+        <a href="Attractions.html">Достопримечательности</a>
+        <a href="NationalCuisine.html">Национальная кухня</a>
+        <a class="right" href="auth.html">Авторизация</a>
+    </div>
+
+</body>
+
+<script>
+    function Back() {
+        window.open("auth.html", "_self");
+    }
+</script>
+</html>
