@@ -1,4 +1,4 @@
-#<img src="https://github.com/Uran4ik/KarakalpakstanVers3/blob/main/Каракалпакстан_лого.jpg" width="100%"/>
+<img src="https://github.com/Uran4ik/KarakalpakstanVers3/blob/main/Каракалпакстан_лого.jpg" width="100%"/>
 
 #
 
