@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <lottie-player
+            src="{{ url_for('static', filename='404ERROR_NEWWW.json') }}"
+            background="transparent"  speed="1"
+            style="background-size: cover;"
+            loop autoplay>
+    </lottie-player>
+
+    <div class="navigation">
+        <a href="/Home">Главная</a>
+        <a href="/blocks">Карточки</a>
+        <a href="/attractions">Достопримечательности</a>
+        <a href="/NationalCuisine">Национальная кухня</a>
+        <a class="right" href="/">Авторизация</a>
+    </div>
+
+    <div>
+        <h2 style="text-align: center">Перейдите на страницы которые существуют</h2>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>
