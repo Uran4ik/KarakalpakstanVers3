@@ -114,6 +114,26 @@ def editprofile():
     return render_template('edit.html', userload=current_user)
 
 
+@app.errorhandler(401)
+def no_such_user(e):
+    return render_template('401.html'), 401
+
+
+@app.errorhandler(402)
+def no_many(e):
+    return render_template('402.html'), 402
+
+
+@app.errorhandler(403)
+def access_is_denied(e):
+    return render_template('403.html'), 403
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
