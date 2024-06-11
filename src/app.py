@@ -119,9 +119,9 @@ def no_such_user(e):
     return render_template('401.html'), 401
 
 
-@app.errorhandler(402)
-def no_many(e):
-    return render_template('402.html'), 402
+# @app.errorhandler(402)
+# def no_many(e):
+#     return render_template('402.html'), 402
 
 
 @app.errorhandler(403)
